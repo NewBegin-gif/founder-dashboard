@@ -17,6 +17,7 @@
         .metric { font-size: 2em; font-weight: bold; color: #3fb950; margin: 10px 0; }
         .status-active { color: #3fb950; font-weight: bold; }
         .status-building { color: #d29922; font-weight: bold; }
+        .status-pending { color: #f85149; font-weight: bold; }
         .table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         .table th, .table td { padding: 10px; border-bottom: 1px solid #30363d; text-align: left; }
         .table th { color: #8b949e; font-weight: normal; }
@@ -38,17 +39,17 @@
         <div class="card">
             <h2>Total Monthly Revenue Target</h2>
             <div class="metric">€ 0.00 / € 25,000</div>
-            <p style="color: #8b949e; margin-bottom: 0;">Target completion: 0%</p>
+            <p style="color: #8b949e; margin-bottom: 0;">Target completion: 0% | Deadline: Juli 2026</p>
         </div>
         <div class="card">
             <h2>Total Expenses (Active)</h2>
             <div class="metric" style="color: #f85149;">€ 0.00</div>
-            <p style="color: #8b949e; margin-bottom: 0;">Focusing on lean, high-ROI infrastructure.</p>
+            <p style="color: #8b949e; margin-bottom: 0;">Alleen pre-approved (zoals OpenRouter microcents).</p>
         </div>
     </div>
 
-    <h2>Active Initiatives</h2>
-    <table class="table">
+    <h2>Actieve Initiatieven</h2>
+    <table class="table" style="margin-bottom: 40px;">
         <thead>
             <tr>
                 <th>Project</th>
@@ -60,27 +61,56 @@
         </thead>
         <tbody>
             <tr>
-                <td data-label="Project">B2B Cold Outreach (theweeklyaiedge.com)</td>
-                <td data-label="Type">Outreach Pipeline</td>
-                <td data-label="Status" class="status-active">Active (25 sent)</td>
-                <td data-label="Revenue Generated">€ 0.00</td>
-                <td data-label="Last Updated">2026-03-23</td>
-            </tr>
-            <tr>
                 <td data-label="Project">Programmatic SEO Engine (pSEO)</td>
                 <td data-label="Type">Organic Lead Gen</td>
-                <td data-label="Status" class="status-building">Building Infrastructure</td>
+                <td data-label="Status" class="status-building">Content word opgebouwd</td>
                 <td data-label="Revenue Generated">€ 0.00</td>
-                <td data-label="Last Updated">2026-03-23</td>
+                <td data-label="Last Updated">2026-03-24</td>
+            </tr>
+            <tr>
+                <td data-label="Project">AI Muziek Project</td>
+                <td data-label="Type">Productie</td>
+                <td data-label="Status" class="status-building">Onderzoeken Trends</td>
+                <td data-label="Revenue Generated">€ 0.00</td>
+                <td data-label="Last Updated">2026-03-24</td>
+            </tr>
+            <tr>
+                <td data-label="Project">NeoClaw Verkoop</td>
+                <td data-label="Type">SaaS / Tooling</td>
+                <td data-label="Status" class="status-building">Concept validatie</td>
+                <td data-label="Revenue Generated">€ 0.00</td>
+                <td data-label="Last Updated">2026-03-24</td>
+            </tr>
+            <tr>
+                <td data-label="Project">CFA Samenvattingen</td>
+                <td data-label="Type">Digitale Producten</td>
+                <td data-label="Status" class="status-pending">Wachten op CFA toegang</td>
+                <td data-label="Revenue Generated">€ 0.00</td>
+                <td data-label="Last Updated">2026-03-24</td>
+            </tr>
+            <tr>
+                <td data-label="Project">B2B Cold Outreach (theweeklyaiedge.com)</td>
+                <td data-label="Type">Matchmaking (15-20% rev share)</td>
+                <td data-label="Status" class="status-active">Active (Pipeline warm)</td>
+                <td data-label="Revenue Generated">€ 0.00</td>
+                <td data-label="Last Updated">2026-03-24</td>
             </tr>
             <tr>
                 <td data-label="Project">B2C Crypto Trading (theweekly2pctedge.com)</td>
                 <td data-label="Type">Product Sales</td>
-                <td data-label="Status" class="status-building">Awaiting LemonSqueezy</td>
+                <td data-label="Status" class="status-pending">Wachten op LemonSqueezy</td>
                 <td data-label="Revenue Generated">€ 0.00</td>
                 <td data-label="Last Updated">2026-03-23</td>
             </tr>
         </tbody>
     </table>
+
+    <div class="card" style="margin-bottom: 20px; border-color: #d29922;">
+        <h2 style="color: #d29922;">Openstaande Taken & Issues (Felix & Daan)</h2>
+        <ul style="line-height: 1.8;">
+            <li><span class="status-pending">[Wacht op Daan]</span> Toegang verlenen tot de CFA module zodat ik met de samenvattingen kan beginnen.</li>
+            <li><span class="status-pending">[Wacht op Daan]</span> Reactie op LemonSqueezy identiteitsverificatie afwijzing.</li>
+        </ul>
+    </div>
 </body>
 </html>
