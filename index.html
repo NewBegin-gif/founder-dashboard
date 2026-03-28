@@ -1,118 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Meta tags for Apple Web App capable -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Felix Command">
-    <title>Felix Command Center | Executive Dashboard</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
-        h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 30px; }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 20px; }
-        .card h2 { margin-top: 0; color: #8b949e; font-size: 1.2em; }
-        .metric { font-size: 2em; font-weight: bold; color: #3fb950; margin: 10px 0; }
-        .status-active { color: #3fb950; font-weight: bold; }
-        .status-building { color: #d29922; font-weight: bold; }
-        .status-pending { color: #f85149; font-weight: bold; }
-        .table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        .table th, .table td { padding: 10px; border-bottom: 1px solid #30363d; text-align: left; }
-        .table th { color: #8b949e; font-weight: normal; }
-        
-        /* Mobile-friendly table */
-        @media screen and (max-width: 600px) {
-            .table { border: 0; }
-            .table thead { display: none; }
-            .table tr { margin-bottom: 20px; display: block; border-bottom: 2px solid #30363d; padding-bottom: 10px;}
-            .table td { display: block; text-align: right; padding-left: 50%; position: relative; border-bottom: none; }
-            .table td::before { content: attr(data-label); position: absolute; left: 10px; width: 45%; padding-right: 10px; text-align: left; font-weight: bold; color: #8b949e; }
-        }
-    </style>
-</head>
-<body>
-    <h1>Felix Command Center</h1>
-    
-    <div class="grid-container" style="margin-bottom: 40px;">
-        <div class="card">
-            <h2>Total Monthly Revenue Target</h2>
-            <div class="metric">€ 0.00 / € 25,000</div>
-            <p style="color: #8b949e; margin-bottom: 0;">Target completion: 0% | Deadline: Juli 2026</p>
-        </div>
-        <div class="card">
-            <h2>Total Expenses (Active)</h2>
-            <div class="metric" style="color: #f85149;">€ 100.00 (X API)</div>
-            <p style="color: #8b949e; margin-bottom: 0;">Micro-transacties op OpenRouter actief. Rest is Zero-Cost.</p>
-        </div>
+<html>
+<body style="font-family: monospace; background: #111; color: #eee; padding: 40px;">
+    <h1 style="color: #0f0; border-bottom: 2px solid #333;">Felix Command Center</h1>
+    <p>Laatste update: 2026-03-28 00:28:28 UTC</p>
+    <div style="background: #222; padding: 20px; border: 1px solid #333;">
+        Primaire KPI: <strong style="color: #0f0;">$499 Gumroad Sale (Wekelijks 2% Edge)</strong>
+        <p>Huidige Traffic Generatie (Bekijk live in <a href="https://analytics.google.com" style="color: #0cf;">Google Analytics GA4</a>)</p>
     </div>
-
-    <h2>Actieve Initiatieven</h2>
-    <table class="table" style="margin-bottom: 40px;">
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>Type</th>
-                <th>Status</th>
-                <th>Revenue Generated</th>
-                <th>Last Updated</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="Project">Trading Systeem (theweekly2pctedge.com)</td>
-                <td data-label="Type">B2C Product ($499 Gumroad)</td>
-                <td data-label="Status" class="status-active">Live - Marketing via X & Reddit</td>
-                <td data-label="Revenue Generated">$ 0.00</td>
-                <td data-label="Last Updated">2026-03-26</td>
-            </tr>
-            <tr>
-                <td data-label="Project">CFA Samenvattingen</td>
-                <td data-label="Type">Digitale Producten (Gumroad)</td>
-                <td data-label="Status" class="status-building">Deploying to GitHub Pages - Scraper actief</td>
-                <td data-label="Revenue Generated">$ 0.00</td>
-                <td data-label="Last Updated">2026-03-26</td>
-            </tr>
-            <tr>
-                <td data-label="Project">AIBuilderMarketplace.com</td>
-                <td data-label="Type">Multi-vendor AI Marketplace</td>
-                <td data-label="Status" class="status-active">Live - GitHub Pages (pSEO engine)</td>
-                <td data-label="Revenue Generated">€ 0.00</td>
-                <td data-label="Last Updated">2026-03-26</td>
-            </tr>
-            <tr>
-                <td data-label="Project">Programmatic SEO Engine (pSEO)</td>
-                <td data-label="Type">Organic Lead Gen</td>
-                <td data-label="Status" class="status-active">Swarm actief - 10 artikelen geplaatst</td>
-                <td data-label="Revenue Generated">€ 0.00</td>
-                <td data-label="Last Updated">2026-03-26</td>
-            </tr>
-            <tr>
-                <td data-label="Project">AI Muziek Project</td>
-                <td data-label="Type">Productie</td>
-                <td data-label="Status" class="status-active">20 nummers per dag (Suno -> DistroKid WAF omzeild)</td>
-                <td data-label="Revenue Generated">€ 0.00</td>
-                <td data-label="Last Updated">2026-03-26</td>
-            </tr>
-            <tr>
-                <td data-label="Project">B2B Cold Outreach (theweeklyaiedge.com)</td>
-                <td data-label="Type">Matchmaking (15-20% rev share)</td>
-                <td data-label="Status" class="status-active">Active (Inbox Autonomous Management)</td>
-                <td data-label="Revenue Generated">€ 0.00</td>
-                <td data-label="Last Updated">2026-03-26</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="card" style="margin-bottom: 20px; border-color: #d29922;">
-        <h2 style="color: #d29922;">Openstaande Taken & Issues (Felix & Daan)</h2>
-        <ul style="line-height: 1.8;">
-            <li><span class="status-active">[Actie Felix]</span> CFA Module deploy afronden en producten live zetten.</li>
-            <li><span class="status-active">[Actie Felix]</span> Omnichannel sales script monitoren op Reddit/X/Quora.</li>
-            <li><span class="status-pending">[Wacht op Daan]</span> Huidige verkopen TheWeekly2%Edge op Gumroad controleren.</li>
-            <li><span class="status-active">[Actie Felix]</span> Permanente frontend error message dropouts oplossen (Brevity ingezet, onderzoekt websocket resets).</li>
-        </ul>
-    </div>
+    <h2 style="color: #0f0; margin-top: 30px;">Daemon Status</h2>
+    <table style="width: 100%; border-collapse: collapse;"><tr><td>Pseo_Daemon</td><td><span style='color: #ff0000;'>● Offline</span></td></tr><tr><td>Agent_X_Bot</td><td><span style='color: #ff0000;'>● Offline</span></td></tr><tr><td>Support_Bot</td><td><span style='color: #00ff00;'>● Actief</span></td></tr></table>
+    <h2 style="color: #0f0;">Openstaande Initiatieven</h2>
+    <ul>
+        <li><strong>pSEO Engine (Hybrid)</strong>: Script update beschikbaar voor 50/50 distributie.</li>
+        <li><strong>Reddit Marketing</strong>: Wachten op wekelijkse update (zondag).</li>
+        <li><strong>IndieHackers</strong>: Script klaargezet, wachten op test (ZenRows/Selenium bypass).</li>
+    </ul>
 </body>
 </html>
